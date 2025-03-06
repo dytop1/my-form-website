@@ -1,0 +1,7 @@
+self.addEventListener("fetch", event => {
+    if (event.request.method === "POST") {
+        event.respondWith(new Response("Form submission simulated!", {
+            headers: { "Content-Type": "text/plain" }
+        }));
+    }
+});
