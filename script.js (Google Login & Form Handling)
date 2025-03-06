@@ -1,0 +1,15 @@
+document.getElementById("google-login").addEventListener("click", function() {
+    alert("Google Login Integration Pending...");
+});
+
+document.getElementById("user-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let formData = new FormData(this);
+    fetch("form-handler.js", {
+        method: "POST",
+        body: formData
+    }).then(response => response.text()).then(data => {
+        alert("Form Submitted Successfully!");
+    });
+});
