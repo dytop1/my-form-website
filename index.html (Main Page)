@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        
+        <!-- Google Login Button -->
+        <button id="google-login">Sign in with Google</button>
+
+        <form id="user-form">
+            <input type="text" name="fullName" placeholder="Full Name" required>
+            <input type="text" name="fatherName" placeholder="Father’s Name" required>
+            <input type="text" name="motherName" placeholder="Mother’s Name" required>
+            <input type="date" name="dob" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="country" placeholder="Country" required>
+            <input type="text" name="religion" placeholder="Religion" required>
+            <label>Upload Passport Size Photo:</label>
+            <input type="file" name="photo" accept="image/*" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
